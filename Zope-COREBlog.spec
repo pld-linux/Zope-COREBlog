@@ -3,13 +3,13 @@
 Summary:	Blog / Weblog / Web Nikki system on Zope
 Summary(pl):	System bloga/webloga oparty na Zope
 Name:		Zope-%{zope_subname}
-Version:	0.6b
+Version:	0.7b
 Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://zope.org/Members/ats/%{zope_subname}/%{zope_subname}%20%{version}/%{zope_subname}06b.tgz
-# Source0-md5:	a78e5be6a8b4689487080e05c0f115f2
-URL:		http://zope.org/Members/ats/COREBlog/
+Source0:	http://coreblog.org/junk/%{zope_subname}07b.tgz
+# Source0-md5:	13a809337a091bfa93517217998eeac1
+URL:		http://coreblog.org/
 %pyrequires_eq	python-modules
 Requires:	Zope >= 2.6.1
 Requires(post,postun):  /usr/sbin/installzopeproduct
