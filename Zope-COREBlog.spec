@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.python
 %define		zope_subname	COREBlog
 Summary:	Blog / Weblog / Web Nikki system on Zope
-Summary(pl):	Blog dla Zope
+Summary(pl):	System bloga/webloga oparty na Zope
 Name:		Zope-%{zope_subname}
 Version:	0.51b
 Release:	1
@@ -18,10 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define 	product_dir	/usr/lib/zope/Products
 
 %description
-Blog / Weblog / Web Nikki system on Zope
+Blog / Weblog / Web Nikki system on Zope.
 
 %description -l pl
-Blog dla Zope
+System bloga/webloga oparty na Zope.
 
 %prep
 %setup -q -n %{zope_subname}
