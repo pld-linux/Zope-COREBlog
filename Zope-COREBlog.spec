@@ -3,12 +3,12 @@
 Summary:	Blog / Weblog / Web Nikki system on Zope
 Summary(pl):	System bloga/webloga oparty na Zope
 Name:		Zope-%{zope_subname}
-Version:	0.52b
-Release:	2
+Version:	0.6b
+Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://zope.org/Members/ats/%{zope_subname}/%{zope_subname}%20%{version}/%{zope_subname}052b.tgz
-# Source0-md5:	8dec27d7275205ce141adbd1ba999169
+Source0:	http://zope.org/Members/ats/%{zope_subname}/%{zope_subname}%20%{version}/%{zope_subname}06b.tgz
+# Source0-md5:	a78e5be6a8b4689487080e05c0f115f2
 URL:		http://zope.org/Members/ats/COREBlog/
 %pyrequires_eq	python-modules
 Requires:	Zope >= 2.6.1
@@ -24,11 +24,13 @@ System bloga/webloga oparty na Zope.
 
 %prep
 %setup -q -n %{zope_subname}
+find . -type d -name CVS | xargs rm -rf
 
 %build
 mkdir docs docs/stripogram
 mv -f changelog.txt docs
 mv -f stripogram/readme.txt docs/stripogram
+rm -rf dtml/changelog.txt
 
 %install
 rm -rf $RPM_BUILD_ROOT
