@@ -9,6 +9,7 @@ Group:		Development/Tools
 Source0:	http://coreblog.org/junk/%{zope_subname}10.tgz
 # Source0-md5:	1a0c95a7d22d2f3bd5a05ad3b702a256
 URL:		http://coreblog.org/
+BuildRequires:  python
 %pyrequires_eq	python-modules
 Requires:	Zope >= 2.6.1
 Requires(post,postun):	/usr/sbin/installzopeproduct
