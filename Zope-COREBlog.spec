@@ -1,6 +1,6 @@
 %define		zope_subname	COREBlog
 Summary:	Blog / Weblog / Web Nikki system on Zope
-Summary(pl):	System bloga/webloga oparty na Zope
+Summary(pl.UTF-8):   System bloga/webloga oparty na Zope
 Name:		Zope-%{zope_subname}
 Version:	1.22
 Release:	1
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Blog / Weblog / Web Nikki system on Zope.
 
-%description -l pl
+%description -l pl.UTF-8
 System bloga/webloga oparty na Zope.
 
 %prep
